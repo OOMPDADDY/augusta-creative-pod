@@ -1,0 +1,9 @@
+.env
+.env.local
+output/
+config/ingredient-file.md
+config/character-budgets.md
+config/ratio-matrix.md
+node_modules/
+.DS_Store
+_build.mjs

@@ -1,0 +1,28 @@
+{
+  "//": "Shape only. Supply your own MCP servers; this repo vendors none. Read each ones source and scope it yourself. Tokens go in .env, never here.",
+  "mcpServers": {
+    "ads-read": {
+      "//": "READ SCOPE ONLY (ads_read). Seat 10 never changes a budget, bid or status.",
+      "command": "npx",
+      "args": [
+        "-y",
+        "<your-chosen-ads-mcp-package>"
+      ],
+      "env": {
+        "META_ACCESS_TOKEN": "${META_ACCESS_TOKEN}",
+        "META_AD_ACCOUNT_ID": "${META_AD_ACCOUNT_ID}"
+      }
+    },
+    "notes": {
+      "//": "Optional. Where your briefs and argument sets live, if not in this repo.",
+      "command": "npx",
+      "args": [
+        "-y",
+        "<your-chosen-notes-mcp-package>"
+      ],
+      "env": {
+        "NOTION_API_KEY": "${NOTION_API_KEY}"
+      }
+    }
+  }
+}
