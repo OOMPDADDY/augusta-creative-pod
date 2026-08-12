@@ -38,7 +38,7 @@ they are now genuinely fast.
 Requires [Claude Code](https://claude.com/claude-code).
 
 ```bash
-git clone https://github.com/styfinity/augusta-creative-pod.git
+git clone https://github.com/OOMPDADDY/augusta-creative-pod.git
 cd augusta-creative-pod
 cp .env.example .env          # only needed if you wire MCP servers
 mkdir -p config output
