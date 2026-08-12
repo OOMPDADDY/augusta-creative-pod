@@ -40,19 +40,24 @@ pod rather than a production line.
 
 ## Where things live
 
-- `config/` — the ingredient file, character budgets, ratio matrix. One-time,
+- `config/`: the ingredient file, character budgets, ratio matrix. One-time,
   per product. Gitignored, because it is your data.
-- `output/` — everything the seats produce, numbered by seat. Gitignored.
-- `templates/` — starting points you fill in.
-- `.claude/skills/` — the support work seats call on.
+- `output/`: everything the seats produce, numbered by seat. Gitignored.
+- `templates/`: starting points you fill in.
+- `.claude/skills/`: the fifty skills, one folder each. These are the jobs. The
+  seats in `.claude/agents/` are the roles that run them in order. README.md
+  groups all fifty by the stage they belong to.
 
 ## Before the first cycle
 
+Run `cycle-kickoff` first. It checks the eight things every later stage assumes
+are current, and it is the cheapest five minutes in the whole process.
+
 Three skills are one-time and everything downstream assumes they are done:
 
-- `ingredient-file` — eleven fields, filled once per product
-- `character-budgets` — the real character capacity of every template field
-- `layout-grid` — the five layout archetypes built at every ratio
+- `ingredient-file`: eleven fields, filled once per product
+- `character-budgets`: the real character capacity of every template field
+- `layout-grid`: the five layout archetypes built at every ratio
 
 Skipping `character-budgets` is the single most common cause of a broken set.
 Seat 5 will happily write a 60-character headline into a template that holds 42,
